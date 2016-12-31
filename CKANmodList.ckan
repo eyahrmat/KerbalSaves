@@ -1,0 +1,137 @@
+{
+	"kind": "metapackage",
+	"abstract": "A list of modules installed on the default KSP instance",
+	"name": "installed-default",
+	"license": "unknown",
+	"version": "2016.12.31.04.30.13",
+	"identifier": "installed-default",
+	"spec_version": "v1.6",
+	"recommends": [
+		{
+			"name": "ModuleManager"
+		},
+		{
+			"name": "KIS"
+		},
+		{
+			"name": "KerbalEngineerRedux"
+		},
+		{
+			"name": "KAS"
+		},
+		{
+			"name": "KWRocketryRedux-GraduatedPwr"
+		},
+		{
+			"name": "FirespitterCore"
+		},
+		{
+			"name": "CommunityResourcePack"
+		},
+		{
+			"name": "CommunityCategoryKit"
+		},
+		{
+			"name": "PlanetShine"
+		},
+		{
+			"name": "USITools"
+		},
+		{
+			"name": "USI-EXP"
+		},
+		{
+			"name": "UKS"
+		},
+		{
+			"name": "USI-Core"
+		},
+		{
+			"name": "Konstruction"
+		},
+		{
+			"name": "PlanetShine-Config-Default"
+		},
+		{
+			"name": "SpaceY-Expanded"
+		},
+		{
+			"name": "SpaceY-Lifters"
+		},
+		{
+			"name": "IndicatorLights"
+		},
+		{
+			"name": "InterstellarFuelSwitch-Core"
+		},
+		{
+			"name": "Chatterer"
+		},
+		{
+			"name": "MechJeb2"
+		},
+		{
+			"name": "RCSBuildAid"
+		},
+		{
+			"name": "USI-FTT"
+		},
+		{
+			"name": "UniversalStorage"
+		},
+		{
+			"name": "KerbalJointReinforcement"
+		},
+		{
+			"name": "RasterPropMonitor-Core"
+		},
+		{
+			"name": "SmokeScreen"
+		},
+		{
+			"name": "FirespitterResourcesConfig"
+		},
+		{
+			"name": "TweakScale"
+		},
+		{
+			"name": "NoCrewRequirementContinued"
+		},
+		{
+			"name": "RadioFreeKerbin"
+		},
+		{
+			"name": "KWRocketryRedux"
+		},
+		{
+			"name": "SVE-HighResolution"
+		},
+		{
+			"name": "SVE-Scatterer-Config"
+		},
+		{
+			"name": "SVE-Sunflare"
+		},
+		{
+			"name": "Scatterer"
+		},
+		{
+			"name": "EnvironmentalVisualEnhancements"
+		},
+		{
+			"name": "KerbalAlarmClock"
+		},
+		{
+			"name": "ProceduralFairings"
+		},
+		{
+			"name": "RealPlume"
+		},
+		{
+			"name": "RealPlume-StockConfigs"
+		},
+		{
+			"name": "SolverEngines"
+		}
+	]
+}

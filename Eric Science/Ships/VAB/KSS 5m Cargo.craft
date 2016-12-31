@@ -2,7 +2,7 @@ ship = KSS 5m Cargo
 version = 1.2.2
 description = 
 type = VAB
-size = 6.47397614,41.291851,12.5148811
+size = 9.36587524,41.291851,12.5148392
 PART
 {
 	part = C3.Kontainer.04_4294371648
@@ -669,6 +669,8 @@ PART
 	link = mumech.MJ2.AR202_4293391672
 	link = solarPanels1_4293316258
 	link = solarPanels1_4293316134
+	link = KWRadBattLargeS_4294287828
+	link = KWRadBattLargeS_4294287244
 	attN = top,SYserviceBay3m_4294203212
 	attN = bottom,SYengine3mP1_4293523174
 	EVENTS
@@ -3073,6 +3075,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = EngineLightEffect
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -3164,6 +3181,21 @@ PART
 	MODULE
 	{
 		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = tjs_DecouplerLight
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -3662,7 +3694,7 @@ PART
 	istg = 5
 	resPri = 0
 	dstg = 4
-	sidx = 0
+	sidx = 1
 	sqor = 5
 	sepI = 1
 	attm = 0
@@ -3862,6 +3894,21 @@ PART
 	}
 	MODULE
 	{
+		name = EngineLightEffect
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleTestSubject
 		isEnabled = True
 		stagingEnabled = True
@@ -4021,6 +4068,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = tjs_DecouplerLight
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
@@ -4156,15 +4218,30 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = tjs_DecouplerLight
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = KW3mtankL4A_4293456038
 	partName = Part
-	pos = -0.430097222,19.0269451,-3.6342957
+	pos = -0.430097222,19.0269451,-3.63429809
 	attPos = 0,0,0
 	attPos0 = -2.05761671,0.0152766909,4.76836959E-07
-	rot = 7.10542736E-15,1.00000012,-3.5762784E-07,-1.1920929E-07
+	rot = -7.10542736E-14,1.00000012,-3.57627869E-07,-1.1920929E-07
 	attRot = 0,0,0,1
 	attRot0 = 1.26440511E-07,-0.707106769,1.26440497E-07,0.707106888
 	mir = 1,1,1
@@ -4267,10 +4344,10 @@ PART
 {
 	part = KW3mengineTitanT1_4293455968
 	partName = Part
-	pos = -0.430096954,8.01694489,-3.63429093
+	pos = -0.430096984,8.01694489,-3.63429332
 	attPos = 0,0,0
 	attPos0 = -2.75467983E-07,-11.0099983,3.12317889E-06
-	rot = -1.42108547E-14,-0.130526066,4.66797729E-08,0.991445065
+	rot = 1.27897692E-13,-0.130526066,4.66797729E-08,0.991445065
 	attRot = 0,0,0,1
 	attRot0 = -2.84217094E-14,-0.991444945,3.54568272E-07,-0.130526155
 	mir = 1,1,1
@@ -4280,7 +4357,7 @@ PART
 	istg = 5
 	resPri = 0
 	dstg = 6
-	sidx = 1
+	sidx = 0
 	sqor = 5
 	sepI = 3
 	attm = 0
@@ -4481,6 +4558,21 @@ PART
 	}
 	MODULE
 	{
+		name = EngineLightEffect
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleTestSubject
 		isEnabled = True
 		stagingEnabled = True
@@ -4510,10 +4602,10 @@ PART
 {
 	part = SYtank3mCone_4293455766
 	partName = Part
-	pos = -0.430097342,27.4644451,-3.63430214
+	pos = -0.430097461,27.4644451,-3.63430452
 	attPos = 0,0,0
 	attPos0 = 1.18985021E-07,8.4375,2.23175419E-07
-	rot = -1.42108547E-14,-0.130526066,4.66797729E-08,0.991445065
+	rot = 1.27897692E-13,-0.130526066,4.66797729E-08,0.991445065
 	attRot = 0,0,0,1
 	attRot0 = -2.84217094E-14,-0.991444945,3.54568272E-07,-0.130526155
 	mir = 1,1,1
@@ -4602,10 +4694,10 @@ PART
 {
 	part = KW3mtankL4A_4293446846
 	partName = Part
-	pos = -0.430095345,19.0269451,4.10403872
+	pos = -0.430095345,19.0269451,4.1040411
 	attPos = 0,0,0
 	attPos0 = -2.05761743,0.0152766909,4.76836959E-07
-	rot = -3.57627869E-07,-2.08616257E-07,2.13162821E-14,-1.00000012
+	rot = -3.57627925E-07,-2.08616257E-07,4.26325641E-14,-1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 1.26440526E-07,-0.707106769,1.26440497E-07,0.707106888
 	mir = 1,1,1
@@ -4708,10 +4800,10 @@ PART
 {
 	part = KW3mengineTitanT1_4293446770
 	partName = Part
-	pos = -0.430095613,8.01694489,4.10403442
+	pos = -0.430095583,8.01694489,4.10403681
 	attPos = 0,0,0
 	attPos0 = -2.75467983E-07,-11.0099983,3.12317889E-06
-	rot = 4.66797658E-08,0.991445065,3.55271368E-14,0.130526036
+	rot = 4.6679709E-08,0.991445065,7.10542736E-15,0.130526036
 	attRot = 0,0,0,1
 	attRot0 = -2.84217094E-14,-0.991444945,3.54568272E-07,-0.130526155
 	mir = 1,1,1
@@ -4721,7 +4813,7 @@ PART
 	istg = 5
 	resPri = 0
 	dstg = 6
-	sidx = 1
+	sidx = 0
 	sqor = 5
 	sepI = 3
 	attm = 0
@@ -4922,6 +5014,21 @@ PART
 	}
 	MODULE
 	{
+		name = EngineLightEffect
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleTestSubject
 		isEnabled = True
 		stagingEnabled = True
@@ -4951,10 +5058,10 @@ PART
 {
 	part = SYtank3mCone_4293446562
 	partName = Part
-	pos = -0.430095226,27.4644451,4.10404491
+	pos = -0.430095106,27.4644451,4.1040473
 	attPos = 0,0,0
 	attPos0 = 1.18985021E-07,8.4375,2.23175419E-07
-	rot = 4.66797658E-08,0.991445065,3.55271368E-14,0.130526036
+	rot = 4.6679709E-08,0.991445065,7.10542736E-15,0.130526036
 	attRot = 0,0,0,1
 	attRot0 = -2.84217094E-14,-0.991444945,3.54568272E-07,-0.130526155
 	mir = 1,1,1
@@ -5043,10 +5150,10 @@ PART
 {
 	part = fuelLine_4293455858
 	partName = CompoundPart
-	pos = -1.99896789,13.4289093,-2.72850394
+	pos = -1.99897385,13.4289093,-2.72850394
 	attPos = 0,0,0
 	attPos0 = 1.56885171,-5.59803677,-0.905777156
-	rot = -3.22874882E-07,0.258819133,-8.3391356E-09,0.965925932
+	rot = -3.22874882E-07,0.258819133,-8.33906455E-09,0.965925932
 	attRot = 0,0,0,1
 	attRot0 = -8.4221746E-08,-0.965925813,2.25670664E-08,0.258819014
 	mir = 1,1,1
@@ -5128,10 +5235,10 @@ PART
 {
 	part = fuelLine_4293445710
 	partName = CompoundPart
-	pos = 1.13877606,13.4289093,3.198246
+	pos = 1.13878202,13.4289093,3.19824696
 	attPos = 0,0,0
 	attPos0 = 1.5688529,-5.59803677,-0.905777037
-	rot = -8.33910008E-09,0.965925932,3.22874939E-07,-0.258819282
+	rot = -8.33907166E-09,0.965925932,3.2287511E-07,-0.258819282
 	attRot = 0,0,0,1
 	attRot0 = -8.42217744E-08,-0.965925872,2.2567054E-08,0.258819073
 	mir = 1,1,1
@@ -5645,10 +5752,10 @@ PART
 {
 	part = KWsrbUllage_4293408422
 	partName = Part
-	pos = -2.27966881,26.2729893,4.10404539
+	pos = -2.27967358,26.2729893,4.10404778
 	attPos = 0,0,0
 	attPos0 = -1.84955108,7.24604416,5.9603974E-07
-	rot = -0.500000119,0.499999791,0.500000358,-0.49999997
+	rot = -0.50000006,0.499999821,0.500000358,-0.49999994
 	attRot = 0,0,0.707106709,-0.707106709
 	attRot0 = 0.49999994,-0.5,-0.50000006,0.50000006
 	mir = 1,1,1
@@ -5658,7 +5765,7 @@ PART
 	istg = 3
 	resPri = 0
 	dstg = 6
-	sidx = 4
+	sidx = 1
 	sqor = 3
 	sepI = 3
 	attm = 1
@@ -5805,6 +5912,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = EngineLightEffect
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = SolidFuel
@@ -5821,10 +5943,10 @@ PART
 {
 	part = KWsrbUllage_4293407404
 	partName = Part
-	pos = 1.41947734,26.2729893,-3.6343019
+	pos = 1.41948223,26.2729893,-3.63430405
 	attPos = 0,0,0
 	attPos0 = -1.84955227,7.24604416,1.07287156E-06
-	rot = -0.500000358,0.49999994,-0.500000238,0.499999821
+	rot = -0.500000358,0.50000006,-0.500000238,0.499999702
 	attRot = 0,0,0.707106709,-0.707106709
 	attRot0 = 0.49999994,-0.49999994,-0.50000006,0.5
 	mir = 1,1,1
@@ -5834,7 +5956,7 @@ PART
 	istg = 3
 	resPri = 0
 	dstg = 6
-	sidx = 4
+	sidx = 1
 	sqor = 3
 	sepI = 3
 	attm = 1
@@ -5981,6 +6103,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = EngineLightEffect
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = SolidFuel
@@ -5997,10 +6134,10 @@ PART
 {
 	part = KWsrbUllage_4293403094
 	partName = Part
-	pos = -2.28923321,26.2627125,-3.63430119
+	pos = -2.28923798,26.2627125,-3.63430357
 	attPos = 0,0,0
 	attPos0 = 1.85911369,7.23576736,1.19207947E-07
-	rot = 0.500000119,0.499999702,-0.500000477,-0.50000006
+	rot = 0.500000179,0.499999672,-0.500000536,-0.49999997
 	attRot = 0,0,-0.707106709,-0.707106709
 	attRot0 = 0.500000119,0.500000119,0.499999911,0.499999881
 	mir = 1,1,1
@@ -6010,7 +6147,7 @@ PART
 	istg = 3
 	resPri = 0
 	dstg = 6
-	sidx = 1
+	sidx = 2
 	sqor = 3
 	sepI = 3
 	attm = 1
@@ -6157,6 +6294,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = EngineLightEffect
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = SolidFuel
@@ -6173,10 +6325,10 @@ PART
 {
 	part = KWsrbUllage_4293402602
 	partName = Part
-	pos = 1.42904186,26.2627125,4.10404396
+	pos = 1.42904663,26.2627125,4.10404634
 	attPos = 0,0,0
 	attPos0 = 1.85911477,7.23576736,8.34455648E-07
-	rot = -0.500000477,-0.50000006,-0.50000006,-0.499999672
+	rot = -0.500000298,-0.5,-0.500000119,-0.499999613
 	attRot = 0,0,-0.707106709,-0.707106709
 	attRot0 = 0.500000119,0.500000119,0.499999911,0.499999881
 	mir = 1,1,1
@@ -6186,7 +6338,7 @@ PART
 	istg = 3
 	resPri = 0
 	dstg = 6
-	sidx = 1
+	sidx = 2
 	sqor = 3
 	sepI = 3
 	attm = 1
@@ -6333,6 +6485,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = EngineLightEffect
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = SolidFuel
@@ -6349,10 +6516,10 @@ PART
 {
 	part = KWsrbUllage_4293446492
 	partName = Part
-	pos = -2.28445196,11.7739449,4.1040349
+	pos = -2.28445673,11.7739449,4.10403728
 	attPos = 0,0,0
 	attPos0 = -1.85433424,-7.25300026,5.9603974E-07
-	rot = -0.500000119,0.499999791,0.500000358,-0.49999997
+	rot = -0.50000006,0.499999821,0.500000358,-0.49999994
 	attRot = 0,0,0.707106709,-0.707106709
 	attRot0 = 0.49999994,-0.5,-0.50000006,0.50000006
 	mir = 1,1,1
@@ -6362,7 +6529,7 @@ PART
 	istg = 3
 	resPri = 0
 	dstg = 6
-	sidx = 2
+	sidx = 3
 	sqor = 3
 	sepI = 3
 	attm = 1
@@ -6509,6 +6676,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = EngineLightEffect
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = SolidFuel
@@ -6525,10 +6707,10 @@ PART
 {
 	part = KWsrbUllage_4293402248
 	partName = Part
-	pos = 1.4242605,11.7739449,-3.63429141
+	pos = 1.42426538,11.7739449,-3.63429356
 	attPos = 0,0,0
 	attPos0 = -1.85433543,-7.25300026,1.07287156E-06
-	rot = -0.500000358,0.49999994,-0.500000238,0.499999821
+	rot = -0.500000358,0.50000006,-0.500000238,0.499999702
 	attRot = 0,0,0.707106709,-0.707106709
 	attRot0 = 0.49999994,-0.49999994,-0.50000006,0.5
 	mir = 1,1,1
@@ -6538,7 +6720,7 @@ PART
 	istg = 3
 	resPri = 0
 	dstg = 6
-	sidx = 2
+	sidx = 3
 	sqor = 3
 	sepI = 3
 	attm = 1
@@ -6685,6 +6867,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = EngineLightEffect
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = SolidFuel
@@ -6701,10 +6898,10 @@ PART
 {
 	part = KWsrbUllage_4293455624
 	partName = Part
-	pos = -2.28003788,11.7679691,-3.6342907
+	pos = -2.28004265,11.7679691,-3.63429308
 	attPos = 0,0,0
 	attPos0 = 1.84991837,-7.25897598,1.19207947E-07
-	rot = -0.500000119,-0.499999702,0.500000477,0.50000006
+	rot = -0.500000179,-0.499999672,0.500000536,0.49999997
 	attRot = 0,0,0.707106769,0.707106769
 	attRot0 = -0.500000119,-0.500000119,-0.499999911,-0.499999851
 	mir = 1,1,1
@@ -6714,7 +6911,7 @@ PART
 	istg = 3
 	resPri = 0
 	dstg = 6
-	sidx = 3
+	sidx = 4
 	sqor = 3
 	sepI = 3
 	attm = 1
@@ -6861,6 +7058,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = EngineLightEffect
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = SolidFuel
@@ -6877,10 +7089,10 @@ PART
 {
 	part = KWsrbUllage_4293401892
 	partName = Part
-	pos = 1.41984653,11.7679691,4.10403347
+	pos = 1.4198525,11.7679691,4.10403585
 	attPos = 0,0,0
 	attPos0 = 1.84991968,-7.25897598,8.34455648E-07
-	rot = 0.500000477,0.500000119,0.50000006,0.499999672
+	rot = 0.500000298,0.5,0.500000119,0.499999613
 	attRot = 0,0,0.707106769,0.707106769
 	attRot0 = -0.500000119,-0.500000119,-0.499999911,-0.499999851
 	mir = 1,1,1
@@ -6890,7 +7102,7 @@ PART
 	istg = 3
 	resPri = 0
 	dstg = 6
-	sidx = 3
+	sidx = 4
 	sqor = 3
 	sepI = 3
 	attm = 1
@@ -7025,6 +7237,21 @@ PART
 	MODULE
 	{
 		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = EngineLightEffect
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -7910,10 +8137,10 @@ PART
 {
 	part = strutConnectorHeavy_4293358924
 	partName = CompoundPart
-	pos = -1.72717571,26.306675,-2.33722281
+	pos = -1.7271781,26.306675,-2.33722281
 	attPos = 0,0,0
 	attPos0 = 1.29706299,7.27972889,-1.29706275
-	rot = -2.71633041E-07,0.382683456,5.03023045E-09,0.923879683
+	rot = -2.71633041E-07,0.382683456,5.03025888E-09,0.923879683
 	attRot = 0,0,0,1
 	attRot0 = -1.41888435E-07,-0.923879564,5.87720344E-08,0.382683337
 	mir = 1,1,1
@@ -7995,10 +8222,10 @@ PART
 {
 	part = strutConnectorHeavy_4293358560
 	partName = CompoundPart
-	pos = 0.866983175,26.306675,2.80696511
+	pos = 0.866985559,26.306675,2.80696511
 	attPos = 0,0,0
 	attPos0 = 1.29706359,7.27972889,-1.29706275
-	rot = 5.03024111E-09,0.923879623,2.71633041E-07,-0.382683545
+	rot = 5.03023756E-09,0.923879623,2.71633212E-07,-0.382683516
 	attRot = 0,0,0,1
 	attRot0 = -1.41888435E-07,-0.923879564,5.87720272E-08,0.382683337
 	mir = 1,1,1
@@ -8080,10 +8307,10 @@ PART
 {
 	part = strutConnectorHeavy_4293354948
 	partName = CompoundPart
-	pos = -1.33667064,26.316309,2.53381181
+	pos = -1.3366729,26.316309,2.53380942
 	attPos = 0,0,0
 	attPos0 = -0.906563699,7.28936243,-1.57021356
-	rot = -1.67762366E-07,0.499999821,-6.7055268E-08,-0.866025686
+	rot = -1.67762309E-07,0.499999762,-6.70552538E-08,-0.866025686
 	attRot = 0,0,0,1
 	attRot0 = -1.41952498E-07,-0.499999881,2.45869131E-07,0.866025507
 	mir = 1,1,1
@@ -8165,10 +8392,10 @@ PART
 {
 	part = strutConnectorHeavy_4293354736
 	partName = CompoundPart
-	pos = 0.476477891,26.316309,-2.06406832
+	pos = 0.476480871,26.316309,-2.06406713
 	attPos = 0,0,0
 	attPos0 = -0.906564355,7.28936243,-1.57021379
-	rot = 6.70553106E-08,0.866025627,-1.67762309E-07,0.499999821
+	rot = 6.70553533E-08,0.866025627,-1.67762352E-07,0.499999821
 	attRot = 0,0,0,1
 	attRot0 = -1.41952526E-07,-0.499999821,2.45869131E-07,0.866025448
 	mir = 1,1,1
@@ -8250,10 +8477,10 @@ PART
 {
 	part = strutConnectorHeavy_4293348970
 	partName = CompoundPart
-	pos = -1.72309875,11.7830505,-2.34128881
+	pos = -1.72310114,11.7830505,-2.34128881
 	attPos = 0,0,0
 	attPos0 = 1.29298604,-7.24389553,-1.29298604
-	rot = -2.71633041E-07,0.382683456,5.03023045E-09,0.923879683
+	rot = -2.71633041E-07,0.382683456,5.03025888E-09,0.923879683
 	attRot = 0,0,0,1
 	attRot0 = -1.41888435E-07,-0.923879564,5.87720344E-08,0.382683337
 	mir = 1,1,1
@@ -8335,10 +8562,10 @@ PART
 {
 	part = strutConnectorHeavy_4293347804
 	partName = CompoundPart
-	pos = 0.862906218,11.7830505,2.81103158
+	pos = 0.862908602,11.7830505,2.81103158
 	attPos = 0,0,0
 	attPos0 = 1.29298675,-7.24389553,-1.29298592
-	rot = 5.03024111E-09,0.923879623,2.71633041E-07,-0.382683545
+	rot = 5.03023756E-09,0.923879623,2.71633212E-07,-0.382683516
 	attRot = 0,0,0,1
 	attRot0 = -1.41888435E-07,-0.923879564,5.87720272E-08,0.382683337
 	mir = 1,1,1
@@ -8420,10 +8647,10 @@ PART
 {
 	part = strutConnectorHeavy_4293344668
 	partName = CompoundPart
-	pos = -1.74007487,11.8482533,2.79405546
+	pos = -1.74007726,11.8482533,2.79405546
 	attPos = 0,0,0
 	attPos0 = -1.30996323,-7.17869282,-1.30996311
-	rot = -2.21759421E-07,0.382683277,-1.25436031E-07,-0.923879862
+	rot = -2.21759322E-07,0.382683307,-1.25436088E-07,-0.923879802
 	attRot = 0,0,0,1
 	attRot0 = -1.08645693E-07,-0.382683367,2.62294208E-07,0.923879623
 	mir = 1,1,1
@@ -8505,10 +8732,10 @@ PART
 {
 	part = strutConnectorHeavy_4293344522
 	partName = CompoundPart
-	pos = 0.879882216,11.8482533,-2.32431197
+	pos = 0.879884601,11.8482533,-2.32431197
 	attPos = 0,0,0
 	attPos0 = -1.30996382,-7.17869282,-1.30996299
-	rot = 1.2543606E-07,0.923879743,-2.21759393E-07,0.382683277
+	rot = 1.25436102E-07,0.923879743,-2.21759393E-07,0.382683277
 	attRot = 0,0,0,1
 	attRot0 = -1.08645679E-07,-0.382683307,2.62294208E-07,0.923879564
 	mir = 1,1,1
@@ -8603,7 +8830,7 @@ PART
 	istg = 4
 	resPri = 0
 	dstg = 4
-	sidx = 1
+	sidx = 0
 	sqor = 4
 	sepI = 4
 	attm = 1
@@ -8758,7 +8985,7 @@ PART
 	istg = 4
 	resPri = 0
 	dstg = 4
-	sidx = 1
+	sidx = 0
 	sqor = 4
 	sepI = 4
 	attm = 1
@@ -8900,10 +9127,10 @@ PART
 {
 	part = SYclamp1_4293325782
 	partName = Part
-	pos = -0.430099845,15.7486095,-9.94568157
+	pos = -0.430099845,15.7486095,-9.94570065
 	attPos = 0,0,0
 	attPos0 = 2.86098975E-06,-3.27833104,6.31131077
-	rot = 1.78813934E-07,-2.38418579E-07,1.13686838E-13,-1.00000012
+	rot = 1.78813934E-07,-2.38418579E-07,1.27897692E-13,-1.00000012
 	attRot = 0,0,0,1
 	attRot0 = -2.8421706E-14,1,-1.78813892E-07,-2.08616228E-07
 	mir = 1,1,1
@@ -8913,7 +9140,7 @@ PART
 	istg = 4
 	resPri = 0
 	dstg = 6
-	sidx = 0
+	sidx = 1
 	sqor = 4
 	sepI = 4
 	attm = 1
@@ -8935,10 +9162,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 10.2638826
+		scaleFactor = 10.2638941
 		height = 17.4486084
 		stagingEnabled = True
-		towerRot = -1.7881392E-07,3.27825518E-07,-1.31450365E-13,-1
+		towerRot = -1.7881392E-07,3.27825518E-07,-1.38555806E-13,-1
 		EVENTS
 		{
 		}
@@ -9055,10 +9282,10 @@ PART
 {
 	part = SYclamp1_4293325546
 	partName = Part
-	pos = -0.430089861,15.7486095,10.4154282
+	pos = -0.430089861,15.7486095,10.4154472
 	attPos = 0,0,0
 	attPos0 = 2.86098975E-06,-3.27833104,6.31131506
-	rot = 9.23705556E-14,-1.00000012,-1.78813963E-07,3.27825546E-07
+	rot = 1.77635684E-13,-1.00000012,-1.78813963E-07,3.27825546E-07
 	attRot = 0,0,0,1
 	attRot0 = -2.13162804E-14,1,-1.78813863E-07,-2.08616228E-07
 	mir = 1,1,1
@@ -9068,7 +9295,7 @@ PART
 	istg = 4
 	resPri = 0
 	dstg = 6
-	sidx = 0
+	sidx = 1
 	sqor = 4
 	sepI = 4
 	attm = 1
@@ -9090,10 +9317,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 10.2638826
+		scaleFactor = 10.2638941
 		height = 17.4486084
 		stagingEnabled = True
-		towerRot = -1.1191044E-13,1,1.78813963E-07,4.17232457E-07
+		towerRot = -1.82964727E-13,1,1.78813934E-07,4.17232457E-07
 		EVENTS
 		{
 		}
@@ -9410,5 +9637,167 @@ PART
 		UPGRADESAPPLIED
 		{
 		}
+	}
+}
+PART
+{
+	part = KWRadBattLargeS_4294287828
+	partName = Part
+	pos = -1.75504565,32.8840332,-1.09007752
+	attPos = 0,0,0
+	attPos0 = -1.32494879,-0.405582428,-1.32494867
+	rot = 8.26012609E-08,-0.382683456,-3.42145654E-08,-0.923879564
+	attRot = 0,0,0,1
+	attRot0 = 8.26012609E-08,-0.382683456,-3.42145654E-08,-0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = KWRadBattLargeS_4294287244
+	srfN = srfAttach,KW3mtankL1_4293667352
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 1200
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 600
+		maxAmount = 600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = KWRadBattLargeS_4294287244
+	partName = Part
+	pos = 0.894852042,32.8840332,1.5598197
+	attPos = 0,0,0
+	attPos0 = 1.32494891,-0.405582428,1.32494855
+	rot = -3.4214569E-08,-0.923879564,-8.26012609E-08,0.382683486
+	attRot = 0,0,0,1
+	attRot0 = -3.4214569E-08,-0.923879564,-8.26012609E-08,0.382683486
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = KWRadBattLargeS_4294287828
+	srfN = srfAttach,KW3mtankL1_4293667352
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 1200
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 600
+		maxAmount = 600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
 	}
 }

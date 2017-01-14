@@ -1,10 +1,8 @@
 ship = Mun Lander Mid
-version = 1.1.0
+version = 1.0.5
 description = No description.
 type = None
 size = 2.748819,4.912254,2.663218
-upgraded = 1.1 Wheel Module Overhaul // Upgrades obsolete ModuleWheel, ModuleLandingGear, ModuleLandingLeg data into the new ModuleWheelBase and WheelSubmodules scheme.
-upgraded = 1.1 LT2 Legs Offset   // In 1.1.0, the LT2 legs were re-exported with a different pivot orientation and origin
 PART
 {
 	part = mk2LanderCabin_4294226030
@@ -757,10 +755,10 @@ PART
 {
 	part = landingLeg1-2_4294164874
 	partName = Part
-	pos = 0.346966505,12.85289,-2.99364257
+	pos = 0.431819,13.50289,-2.90879
 	attPos = 0,0,0
 	attPos0 = -0.9615756,0.235508,-0.9615756
-	rot = -0.115074955,-0.881119847,-0.277815521,0.364971787
+	rot = -1.432484E-07,0.9238797,-3.458322E-07,-0.3826835
 	attRot = 0,0,0,1
 	attRot0 = -1.432484E-07,0.9238796,-3.458321E-07,-0.3826835
 	mir = 1,1,1
@@ -899,21 +897,15 @@ PART
 			}
 		}
 	}
-	MODULE
-	{
-		name = ModuleWheelDeployment
-		position = 0
-		stateString = Retracted
-	}
 }
 PART
 {
 	part = landingLeg1-2_4294162618
 	partName = Part
-	pos = 0.346966505,12.85289,-0.900785744
+	pos = 0.431819,13.50289,-0.9856382
 	attPos = 0,0,0
 	attPos0 = -0.9615756,0.235508,0.9615755
-	rot = -0.277815521,-0.364971787,-0.115074955,0.881119847
+	rot = -3.458322E-07,0.3826835,-1.432484E-07,-0.9238797
 	attRot = 0,0,0,1
 	attRot0 = -3.458321E-07,0.3826834,-1.432484E-07,-0.9238796
 	mir = 1,1,1
@@ -1052,21 +1044,15 @@ PART
 			}
 		}
 	}
-	MODULE
-	{
-		name = ModuleWheelDeployment
-		position = 0
-		stateString = Retracted
-	}
 }
 PART
 {
 	part = landingLeg1-2_4294162532
 	partName = Part
-	pos = 2.43982339,12.85289,-0.900785744
+	pos = 2.354971,13.50289,-0.9856382
 	attPos = 0,0,0
 	attPos0 = 0.9615757,0.235508,0.9615755
-	rot = -0.277815521,0.364971787,0.115074955,0.881119847
+	rot = -3.458322E-07,-0.3826835,1.432484E-07,-0.9238797
 	attRot = 0,0,0,1
 	attRot0 = -3.458321E-07,-0.3826835,1.432484E-07,-0.9238796
 	mir = 1,1,1
@@ -1205,21 +1191,15 @@ PART
 			}
 		}
 	}
-	MODULE
-	{
-		name = ModuleWheelDeployment
-		position = 0
-		stateString = Retracted
-	}
 }
 PART
 {
 	part = landingLeg1-2_4294162446
 	partName = Part
-	pos = 2.43982339,12.85289,-2.99364257
+	pos = 2.354971,13.50289,-2.90879
 	attPos = 0,0,0
 	attPos0 = 0.9615754,0.235508,-0.9615756
-	rot = -0.115074955,0.881119847,0.277815521,0.364971787
+	rot = -1.432484E-07,-0.9238797,3.458322E-07,-0.3826835
 	attRot = 0,0,0,1
 	attRot0 = -1.432484E-07,-0.9238796,3.458321E-07,-0.3826834
 	mir = 1,1,1
@@ -1357,12 +1337,6 @@ PART
 				actionGroup = None
 			}
 		}
-	}
-	MODULE
-	{
-		name = ModuleWheelDeployment
-		position = 0
-		stateString = Retracted
 	}
 }
 PART

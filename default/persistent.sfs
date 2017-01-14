@@ -11,7 +11,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/default
-	launchID = 6
+	launchID = 7
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe -single-instance - 
 	versionFull = 1.2.2.1622 (WindowsPlayer x64)
@@ -84,7 +84,7 @@ GAME
 		}
 		CAREER
 		{
-			TechTreeUrl = GameData\ModuleManager.TechTree
+			TechTreeUrl = GameData/HideEmptyTechTreeNodes/HETTN.TechTree
 			StartingFunds = 25000
 			StartingScience = 0
 			StartingReputation = 0
@@ -94,6 +94,33 @@ GAME
 			FundsLossMultiplier = 1
 			RepLossMultiplier = 1
 			RepLossDeclined = 1
+		}
+		HETTNCustomParams_Zoom
+		{
+			zoomMaxParam = 100
+			zoomMinParam = 35
+			zoomSpeedParam = 5
+			zoomMax = 1
+			zoomMin = 0.35
+			zoomSpeed = 0.05
+		}
+		HETTNCustomParams_Nodes
+		{
+			forceHideUnresearchable = False
+			forceHideEmpty = True
+		}
+		HETTNCustomParams_Misc
+		{
+			debugging = False
+		}
+		FESettings
+		{
+			hideUnpurchased = True
+			debug = False
+			setAdvanced = True
+			replaceFbM = True
+			categoryDefault = 
+			subCategoryDefault = 
 		}
 		CommNetParams
 		{
@@ -149,8 +176,8 @@ GAME
 			}
 			RecordsAltitude
 			{
-				reached = 144.24000000000001
-				record = 26280.319812007601
+				completed = 1570.2599999988688
+				record = 70000
 			}
 			RecordsDepth
 			{
@@ -159,17 +186,42 @@ GAME
 			}
 			RecordsSpeed
 			{
-				reached = 228.940000000043
-				record = 1275.0699964231601
+				completed = 1625.4799999988186
+				record = 2500
 			}
 			RecordsDistance
 			{
 				completed = 175.100000000016
 				record = 100000
 			}
+			Sun
+			{
+				reached = 1725.3199999987278
+				Escape
+				{
+					completedUnmanned = 1932.7799999985391
+				}
+				Flyby
+				{
+					completedUnmanned = 1725.3199999987278
+				}
+			}
 			Kerbin
 			{
 				reached = 851.259999999515
+				Orbit
+				{
+					completedUnmanned = 1570.2999999988688
+					vessel
+					{
+						name = Warp Drive
+						flag = Squad/Flags/default
+					}
+				}
+				Escape
+				{
+					completedUnmanned = 1725.3199999987278
+				}
 				Landing
 				{
 					completed = 851.259999999515
@@ -186,6 +238,30 @@ GAME
 				Splashdown
 				{
 					completed = 1519.25999999891
+				}
+			}
+			Jool
+			{
+				reached = 1932.7799999985391
+				Escape
+				{
+					completedUnmanned = 1996.3799999984813
+				}
+				Flyby
+				{
+					completedUnmanned = 1932.7799999985391
+				}
+			}
+			Laythe
+			{
+				reached = 1996.3799999984813
+				Escape
+				{
+					completedUnmanned = 1997.3999999984803
+				}
+				Flyby
+				{
+					completedUnmanned = 1996.3799999984813
 				}
 			}
 		}
@@ -422,7 +498,7 @@ GAME
 	SCENARIO
 	{
 		name = KerbalAlarmClockScenario
-		scene = 5, 6, 7
+		scene = 5, 6, 7, 8
 		KACAlarmListStorage
 		{
 		}
@@ -493,8 +569,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.2.2
-		UT = 1549.7399999988875
-		activeVessel = 0
+		UT = 2404.9599999981097
+		activeVessel = -1
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
 		commNetUIModeFlight = Path
@@ -590,6 +666,9 @@ GAME
 				{
 				}
 				RPMVesselComputer
+				{
+				}
+				SolverFlightSys
 				{
 				}
 				ModuleSwapConverterUpdate
@@ -691,6 +770,9 @@ GAME
 				RPMVesselComputer
 				{
 				}
+				SolverFlightSys
+				{
+				}
 				ModuleSwapConverterUpdate
 				{
 				}
@@ -788,6 +870,9 @@ GAME
 				{
 				}
 				RPMVesselComputer
+				{
+				}
+				SolverFlightSys
 				{
 				}
 				ModuleSwapConverterUpdate
@@ -889,6 +974,9 @@ GAME
 				RPMVesselComputer
 				{
 				}
+				SolverFlightSys
+				{
+				}
 				ModuleSwapConverterUpdate
 				{
 				}
@@ -986,6 +1074,9 @@ GAME
 				{
 				}
 				RPMVesselComputer
+				{
+				}
+				SolverFlightSys
 				{
 				}
 				ModuleSwapConverterUpdate
@@ -1087,6 +1178,9 @@ GAME
 				RPMVesselComputer
 				{
 				}
+				SolverFlightSys
+				{
+				}
 				ModuleSwapConverterUpdate
 				{
 				}
@@ -1186,6 +1280,9 @@ GAME
 				RPMVesselComputer
 				{
 				}
+				SolverFlightSys
+				{
+				}
 				ModuleSwapConverterUpdate
 				{
 				}
@@ -1220,13 +1317,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
-				ECC = 1
-				INC = 2.0089159086392092
+				SMA = 299999.88213225675
+				ECC = 0.99999999999999989
+				INC = 2.008915908639028
 				LPE = 270
-				LAN = 324.9331365922896
-				MNA = 0
-				EPH = 1548.2399999988888
+				LAN = 325.05508880111518
+				MNA = 3.1415926207170166
+				EPH = 1555.5399999988822
 				REF = 1
 			}
 			PART
@@ -1577,6 +1674,9 @@ GAME
 				RPMVesselComputer
 				{
 				}
+				SolverFlightSys
+				{
+				}
 				ModuleSwapConverterUpdate
 				{
 				}
@@ -1615,9 +1715,9 @@ GAME
 				ECC = 1
 				INC = 2.009028990253098
 				LPE = 270
-				LAN = 324.93309794449232
+				LAN = 325.05505015331784
 				MNA = 0
-				EPH = 1548.2399999988888
+				EPH = 1555.5399999988822
 				REF = 1
 			}
 			PART
@@ -1968,6 +2068,843 @@ GAME
 				RPMVesselComputer
 				{
 				}
+				SolverFlightSys
+				{
+				}
+				ModuleSwapConverterUpdate
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 1372ef9e0c114f1798ab03f9a207f8c8
+			name = Warp Drive Debris
+			type = Debris
+			sit = ESCAPING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 0.05999999999994543
+			lct = 2397.6399999981163
+			lastUT = 2397.6999999981163
+			root = 0
+			lat = -21.827996049309906
+			lon = 31.581377789576919
+			alt = 35892891.363540411
+			hgt = -1
+			nrm = -0.0231588781,-0.949018002,-0.314370036
+			rot = 0.560755193,-0.249183744,-0.390509188,-0.686268032
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = -327868.43449257687
+				ECC = 296.21135023173031
+				INC = 101.47612627329127
+				LPE = 273.44786423142995
+				LAN = 218.24371274373394
+				MNA = -856.91458521707693
+				EPH = 2397.6999999981163
+				REF = 0
+			}
+			PART
+			{
+				name = KspiFoldingRadLarge
+				cid = 4293266778
+				uid = 3855330573
+				mid = 2384352833
+				launchID = 6
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.675000012
+				shielded = False
+				temp = 540.4996852894709
+				tempExt = 3640.7668085427945
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = KspiFoldingRadLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableRadiator
+					isEnabled = True
+					currentRotation = (5.36441746E-07, 0.0091649415, -2.50292919E-06, 0.999957979)
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0.5
+					deployState = EXTENDED
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleActiveRadiator
+					isEnabled = True
+					IsCooling = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleRadiatorAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ActivateAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FNRadiator
+					isEnabled = True
+					radiatorIsEnabled = True
+					canRadiateHeat = True
+					radiatorInit = True
+					isAutomated = True
+					pivotEnabled = True
+					showRetractButton = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DeployRadiatorAction
+						{
+							actionGroup = None
+						}
+						RetractRadiatorAction
+						{
+							actionGroup = None
+						}
+						ToggleRadiatorAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 1
+					defaultScale = 1
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 25000
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = WasteHeat
+					amount = 573.0605224977686
+					maxAmount = 67500.001192092896
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+				RPMVesselComputer
+				{
+				}
+				SolverFlightSys
+				{
+				}
+				ModuleSwapConverterUpdate
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = a77fa29ddbb74c00bbf2962c26f11cf8
+			name = Warp Drive Debris
+			type = Debris
+			sit = ESCAPING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 0.05999999999994543
+			lct = 2397.6399999981163
+			lastUT = 2397.6999999981163
+			root = 0
+			lat = -21.827996028836797
+			lon = 31.581378002710327
+			alt = 35892891.260251045
+			hgt = -1
+			nrm = 0.205917567,-0.949018359,-0.238667905
+			rot = 0.667511523,-0.492839634,-0.146191016,-0.538670421
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = -327868.43449282786
+				ECC = 296.21134919354631
+				INC = 101.4761256950533
+				LPE = 273.44786422544263
+				LAN = 218.24371271007431
+				MNA = -856.91458523787753
+				EPH = 2397.6999999981163
+				REF = 0
+			}
+			PART
+			{
+				name = KspiFoldingRadLarge
+				cid = 4292968006
+				uid = 3571478453
+				mid = 2384352833
+				launchID = 6
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,0.99999994
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.675000012
+				shielded = False
+				temp = 2487.9088070191333
+				tempExt = 3739.0335119996562
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = KspiFoldingRadLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableRadiator
+					isEnabled = True
+					currentRotation = (-1.70469284E-05, -0.112650841, 6.31064177E-05, 0.993634701)
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0.5
+					deployState = EXTENDED
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleActiveRadiator
+					isEnabled = True
+					IsCooling = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleRadiatorAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ActivateAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FNRadiator
+					isEnabled = True
+					radiatorIsEnabled = True
+					canRadiateHeat = True
+					radiatorInit = True
+					isAutomated = True
+					pivotEnabled = True
+					showRetractButton = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DeployRadiatorAction
+						{
+							actionGroup = None
+						}
+						RetractRadiatorAction
+						{
+							actionGroup = None
+						}
+						ToggleRadiatorAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 1
+					defaultScale = 1
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 25000
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = WasteHeat
+					amount = 573.0605224977686
+					maxAmount = 67500.001192092896
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+				RPMVesselComputer
+				{
+				}
+				SolverFlightSys
+				{
+				}
+				ModuleSwapConverterUpdate
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = dbaef5fe35aa477d8ae3b97adecd2c0e
+			name = Warp Drive Debris
+			type = Debris
+			sit = ESCAPING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 0.05999999999994543
+			lct = 2397.6399999981163
+			lastUT = 2397.6999999981163
+			root = 0
+			lat = -21.827995880587068
+			lon = 31.581378134042218
+			alt = 35892890.969265461
+			hgt = -1
+			nrm = 0.314368665,-0.949018359,-0.0231602192
+			rot = 0.672645271,-0.66146487,0.120381571,-0.309064716
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = -327868.43449353485
+				ECC = 296.21134634169169
+				INC = 101.47612542774645
+				LPE = 273.44786422429553
+				LAN = 218.24371269451419
+				MNA = -856.91458527158875
+				EPH = 2397.6999999981163
+				REF = 0
+			}
+			PART
+			{
+				name = KspiFoldingRadLarge
+				cid = 4292967260
+				uid = 1002089232
+				mid = 2384352833
+				launchID = 6
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1.00000012
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.675000012
+				shielded = False
+				temp = 2999.4282528355207
+				tempExt = 4099.5553376921807
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/default
+				rTrf = KspiFoldingRadLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableRadiator
+					isEnabled = True
+					currentRotation = (3.78489531E-05, 0.16442813, -5.19529021E-05, -0.986389101)
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0.5
+					deployState = EXTENDED
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleActiveRadiator
+					isEnabled = True
+					IsCooling = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleRadiatorAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ActivateAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FNRadiator
+					isEnabled = True
+					radiatorIsEnabled = True
+					canRadiateHeat = True
+					radiatorInit = True
+					isAutomated = True
+					pivotEnabled = True
+					showRetractButton = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DeployRadiatorAction
+						{
+							actionGroup = None
+						}
+						RetractRadiatorAction
+						{
+							actionGroup = None
+						}
+						ToggleRadiatorAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 1
+					defaultScale = 1
+					defaultTransformScale = (0, 0, 0)
+					DryCost = 25000
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = USI_ModuleRecycleablePart
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = WasteHeat
+					amount = 573.0605224977686
+					maxAmount = 67500.001192092896
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+				RPMVesselComputer
+				{
+				}
+				SolverFlightSys
+				{
+				}
 				ModuleSwapConverterUpdate
 				{
 				}
@@ -1979,9 +2916,9 @@ GAME
 		ModuleManager.2.7.5 v2.7.5.0 = True
 		MiniAVC v1.0.3.2 = True
 		USITools v1.0.0.0 = True
-		B9AnimationModules v1.0.5.0 / v1.0.5 = True
-		B9PartSwitch v1.5.3.0 = True
-		Chatterer v0.9.91.1586 = True
+		B9AnimationModules v1.0.5.0 / v1.0.5 = False
+		B9PartSwitch v1.5.3.0 = False
+		Chatterer v0.9.91.1586 = False
 		CCK v1.2.1.0 = True
 		Atmosphere v1.5.6131.22338 / v1.0.0.0 = True
 		CelestialShadows v1.5.6131.22338 / v1.0.0.0 = True
@@ -1994,12 +2931,12 @@ GAME
 		TextureConfig v1.5.6131.22338 / v1.0.0.0 = True
 		Utils v1.5.6131.22337 / v1.0.0.0 = True
 		_BuildManager v1.5.6131.22338 / v1.0.0.0 = True
-		Firespitter v7.3.6195.32439 = True
+		Firespitter v7.3.6195.32439 = False
 		IndicatorLights v1.0.0.0 = True
-		InterstellarFuelSwitch v2.3.1.0 / v2.3.1 = True
+		InterstellarFuelSwitch v2.3.1.0 / v2.3.1 = False
 		Scale_Redist v1.0.0.0 = True
 		RasterPropMonitor v0.28.0.18220 = True
-		KAS v0.6.1.0 / v0.6.1 for KSP 1.2 = True
+		KAS v0.6.1.0 / v0.6.1 for KSP 1.2 = False
 		MiniAVC v1.0.3.1 = True
 		KerbalEngineer v1.1.2.8 = True
 		KerbalEngineer.Unity v1.0.0.0 = True
@@ -2011,14 +2948,14 @@ GAME
 		PlanetShine v1.0.6121.34655 = True
 		scatterer v1.0.6134.38560 = True
 		SmokeScreen v2.7.0.0 = True
-		TextureReplacer v2.5.4.0 = True
+		TextureReplacer v2.5.4.0 = False
 		Konstruction v0.0.0.0 = True
 		KolonyTools v1.0.0.0 = True
 		000_USITools = True
-		B9AnimationModules = True
-		B9PartSwitch = True
-		B9_Aerospace = True
-		B9_Aerospace_HX = True
+		B9AnimationModules = False
+		B9PartSwitch = False
+		B9_Aerospace = False
+		B9_Aerospace_HX = False
 		Chatterer = True
 		CommunityCategoryKit = True
 		CommunityResourcePack = True
@@ -2039,7 +2976,7 @@ GAME
 		SpaceY-Expanded = True
 		SpaceY-Lifters = True
 		StockVisualEnhancements = True
-		TextureReplacer = True
+		TextureReplacer = False
 		UmbraSpaceIndustries = True
 		UniversalStorage = True
 		ModuleManager.2.7.5.dll = True
@@ -2047,6 +2984,44 @@ GAME
 		ModuleManager.ConfigSHA = True
 		ModuleManager.Physics = True
 		ModuleManager.TechTree = True
+		ModuleManager.2.7.1 v2.7.1.0 = True
+		FilterExtensions v1.0.0.0 = True
+		Chatterer v0.9.92.1622 = True
+		Firespitter v7.3.6212.36331 = True
+		HideEmptyTechTreeNodes v0.7.4.0 = True
+		InterstellarFuelSwitch v2.3.2.0 / v2.3.2 = True
+		KAS v0.6.2.0 / v0.6.2 for KSP 1.2 = True
+		KSP-AVC v1.1.6.2 = True
+		DockingPortAlignmentIndicator v1.0.0.0 = True
+		DPAI_RPM v1.0.0.0 = True
+		ModuleDockingNodeNamed v1.0.0.0 = True
+		ProceduralFairings v0.0.3.17 = True
+		RCSBuildAid v0.9.1.29305 = True
+		SolverEngines v3.0.0.0 = True
+		KerbalAlarmClock v3.8.3.0 = True
+		Scale v2.3.3.0 = True
+		Assembly-CSharp-firstpass v0.0.0.0 = True
+		OpenResourceSystem_KSPIE v1.4.2.0 = True
+		Interstellar v1.11.17.0 = True
+		000_FilterExtensions = True
+		000_FilterExtensions Configs = True
+		CommunityTechTree = True
+		HideEmptyTechTreeNodes = True
+		KSP-AVC = True
+		NavBallDockingAlignmentIndicatorCE = True
+		NavyFish = True
+		NoCrewRequirementContinued = True
+		ProceduralFairings = True
+		RadioFreeKerbin = True
+		RCSBuildAid = True
+		RealPlume = True
+		SolverEngines = True
+		TriggerTech = True
+		TweakScale = True
+		WarpPlugin = True
+		ModuleManager.2.7.1.dll = True
+		HyperEdit v1.5.3.0 = True
+		Kerbaltek = True
 	}
 	ROSTER
 	{
